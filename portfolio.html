@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document1</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <!--Header-->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo"><span class="logo__web">Web</span><span
+                    class="logo__studio--black">Studio</span></a>
+            <div class="navigatin-contact-container" data-menu>
+                <nav class="navigatin-contact-container__nav-list">
+                    <ul class="navigatin-contact-container__header-list">
+                        <li class="header-list__item"><a class="navigation" href="index.html">Студія</a></li>
+                        <li class="header-list__item"><a class="navigation navigation__line" href="#">Портфоліо</a></li>
+                        <li class="header-list__item"><a class="navigation" href="#">Контакти</a></li>
+                    </ul>
+                </nav>
+                <ul class="navigatin-contact-container__contacts-menu">
+                    <li>
+                        <a class="contacts contacts-mail" href="mailto:info@example.com">
+                            <svg class="icon-envelope">
+                                <use href="./images/icons.svg#icon-envelope"></use>
+                            </svg>
+                            info@example.com</a>
+                    </li>
+                    <li><a class="contacts" href="tel:+380991111111">
+                            <svg class="icon-smartphone">
+                                <use href="./images/icons.svg#icon-smartphone"></use>
+                            </svg>
+                            +38 099 111 11 11</a></li>
+                </ul>
+                <ul class="navigatin-contact-container__social-links">
+                    <li>
+                        <a class="navigatin-contact-container__social-links__element">
+                            Instagram
+                        </a>
+                    </li>
+                    <li>
+                        <a class="navigatin-contact-container__social-links__element">
+                            Twitter
+                        </a>
+                    </li>
+                    <li>
+                        <a class="navigatin-contact-container__social-links__element">
+                            Facebook
+                        </a>
+                    </li>
+                    <li>
+                        <a class="navigatin-contact-container__social-links__element">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+            <button class="burger-menu-btn"
+                data-menu-btn>
+                <svg class="burger-menu-btn__icon">
+                    <use class="burger-menu-btn__icon__burger" href="./icons/icons.svg#icon-burger-menu"></use>
+                    <use class="burger-menu-btn__icon__cross" href="./icons/icons.svg#icon-btn-close"></use>
+                </svg>
+            </button>
+            
+        </div>
+    </header>
+    <!--Main-->
+    <main>
+        <!--Section 1-->
+        <section class="section">
+            <div class="container">
+                <h1 class="visually-hidden">Фильтры</h1>
+                <ul class="portfolio-filters">
+                    <li><button type="button" class="buttons">Все</button></li>
+                    <li><button type="button" class="buttons">Веб-сайты</button></li>
+                    <li><button type="button" class="buttons">Приложения</button></li>
+                    <li><button type="button" class="buttons">Дизайн</button></li>
+                    <li><button type="button" class="buttons">Маркетинг</button></li>
+                </ul>
+                <ul class="block-projects">
+
+                    <!-- Фото технокряка -->
+                    <li class="portfolio-card">
+                        <a href="">
+                            <div class="img-wrapper">
+                                <!-- <img src="./images/project1.jpg" alt="Технокряк Веб-сайт" width="370" /> -->
+                                <div class="overlay">
+                                    <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                                        Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                                    </p>
+                                </div>
+                                <picture>
+                                    <source srcset="./images/portfolio/card_1/pf_card1_desktop_x1.webp 1x, ./images/portfolio/card_1/pf_card1_desktop_x2.webp 2x" media="(min-width: 1200px)" type="image/webp"/>
+                                    <source srcset="./images/portfolio/card_1/pf_card1_desktop_x1.jpg 1x, ./images/portfolio/card_1/pf_card1_desktop_x2.jpg 2x" media="(min-width: 1200px)"/>
+                                    <source srcset="./images/portfolio/card_1/pf_card1_tablet_x1.webp 1x, ./images/portfolio/card_1/pf_card1_tablet_x2.webp 2x" media="(min-width: 768px)" type="image/webp"/>
+                                    <source srcset="./images/portfolio/card_1/pf_card1_tablet_x1.jpg 1x, ./images/portfolio/card_1/pf_card1_tablet_x2.jpg 2x" media="(min-width: 768px)"/>
+                                    <source srcset="./images/portfolio/card_1/pf_card1_mobile_x1.webp 1x, ./images/portfolio/card_1/pf_card1_mobile_x2.webp 2x" media="(min-width: 320px)" type="image/webp"/>
+                                    <source srcset="./images/portfolio/card_1/pf_card1_mobile_x1.jpg 1x, ./images/portfolio/card_1/pf_card1_mobile_x2.jpg 2x" media="(min-width: 320px)"/>
+                                    <img class="portfolio-card" src='./images/portfolio/card_1/pf_card1_mobile_x2.jpg' alt="Ноутбук с открытым сайтом Технокряк"  />
+                                </picture>
+                            </div>
+                            <div class="borders card-info">
+                                <h2 class="projects">Технокряк</h2>
+                                <p class="product">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <!-- Фото лого постера -->
+                    <li class="portfolio-card">
+                        <a href="">
+                            <div class="img-wrapper">
+                                <!-- <img src="./images/project2.jpg" alt="Постер New Orlean vs Golden Star Дизайн"
+                                    width="370" /> -->
+                                <div class="overlay">
+                                    <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                                        Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                                    </p>
+                                </div>
+                                <picture>
+                                    <source srcset="./images/portfolio/card_2/pf_card2_desktop_x1.webp 1x, ./images/portfolio/card_2/pf_card2_desktop_x2.webp 2x" media="(min-width: 1200px)" type="image/webp"/>
+                                    <source srcset="./images/portfolio/card_2/pf_card2_desktop_x1.jpg 1x, ./images/portfolio/card_2/pf_card2_desktop_x2.jpg 2x" media="(min-width: 1200px)"/>
+                                    <source srcset="./images/portfolio/card_2/pf_card2_tablet_x1.webp 1x, ./images/portfolio/card_2/pf_card2_tablet_x2.webp 2x" media="(min-width: 768px)" type="image/webp"/>
+                                    <source srcset="./images/portfolio/card_2/pf_card2_tablet_x1.jpg 1x, ./images/portfolio/card_2/pf_card2_tablet_x2.jpg 2x" media="(min-width: 768px)"/>
+                                    <source srcset="./images/portfolio/card_2/pf_card2_mobile_x1.webp 1x, ./images/portfolio/card_2/pf_card2_mobile_x2.webp 2x" media="(min-width: 320px)" type="image/webp"/>
+                                    <source srcset="./images/portfolio/card_2/pf_card2_mobile_x1.jpg 1x, ./images/portfolio/card_2/pf_card2_mobile_x2.jpg 2x" media="(min-width: 320px)"/>
+                                    <img class="portfolio-card" src='./images/portfolio/card_2/pf_card2_mobile_x2.jpg' alt="Постер с баскетболистами"  />
+                                </picture>
+                            </div>
+                            <div class="borders card-info">
+                                <h2 class="projects">Постер New Orlean vs Golden Star</h2>
+                                <p class="product">Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <!-- Фото лого ресторана -->
+                    <li class="portfolio-card">
+                        <a href="">
+                            <div class="img-wrapper">
+                                <!-- <img src="./images/project3.jpg" alt="Ресторан Seafood Приложение" width="370" /> -->
+                                <div class="overlay">
+                                    <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                                        Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                                    </p>
+                                </div>
+                                <picture>
+                                    <source srcset="./images/portfolio/card_3/pf_card3_desktop_x1.webp 1x, ./images/portfolio/card_3/pf_card3_desktop_x2.webp 2x" media="(min-width: 1200px)" type="image/webp"/>
+                                    <source srcset="./images/portfolio/card_3/pf_card3_desktop_x1.jpg 1x, ./images/portfolio/card_3/pf_card3_desktop_x2.jpg 2x" media="(min-width: 1200px)"/>
+                                    <source srcset="./images/portfolio/card_3/pf_card3_tablet_x1.webp 1x, ./images/portfolio/card_3/pf_card3_tablet_x2.webp 2x" media="(min-width: 768px)" type="image/webp"/>
+                                    <source srcset="./images/portfolio/card_3/pf_card3_tablet_x1.jpg 1x, ./images/portfolio/card_3/pf_card3_tablet_x2.jpg 2x" media="(min-width: 768px)"/>
+                                    <source srcset="./images/portfolio/card_3/pf_card3_mobile_x1.webp 1x, ./images/portfolio/card_3/pf_card3_mobile_x2.webp 2x" media="(min-width: 320px)" type="image/webp"/>
+                                    <source srcset="./images/portfolio/card_3/pf_card3_mobile_x1.jpg 1x, ./images/portfolio/card_3/pf_card3_mobile_x2.jpg 2x" media="(min-width: 320px)"/>
+                                    <img class="portfolio-card" src='./images/portfolio/card_3/pf_card3_mobile_x2.jpg' alt="Постер с баскетболистами"  />
+                                </picture>
+                            </div>
+                            <div class="borders card-info">
+                                <h2 class="projects">Ресторан Seafood</h2>
+                                <p class="product">Додаток</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <!-- Фото наушников -->
+                    <li class="portfolio-card">
+                        <a href="">
+                            <div class="img-wrapper">
+                                <!-- <img src="./images/project4.jpg" alt="Проект Prime Маркетинг Наушники" width="370" /> -->
+                                <div class="overlay">
+                                    <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                                        Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                                    </p>
+                                </div>
+                                <picture>
+                                    <source srcset="./images/portfolio/card_4/pf_card4_desktop_x1.webp 1x, ./images/portfolio/card_4/pf_card4_desktop_x2.webp 2x" media="(min-width: 1200px)" type="image/webp"/>
+                                    <source srcset="./images/portfolio/card_4/pf_card4_desktop_x1.jpg 1x, ./images/portfolio/card_4/pf_card4_desktop_x2.jpg 2x" media="(min-width: 1200px)"/>
+                                    <source srcset="./images/portfolio/card_4/pf_card4_tablet_x1.webp 1x, ./images/portfolio/card_4/pf_card4_tablet_x2.webp 2x" media="(min-width: 768px)" type="image/webp"/>
+                                    <source srcset="./images/portfolio/card_4/pf_card4_tablet_x1.jpg 1x, ./images/portfolio/card_4/pf_card4_tablet_x2.jpg 2x" media="(min-width: 768px)"/>
+                                    <source srcset="./images/portfolio/card_4/pf_card4_mobile_x1.webp 1x, ./images/portfolio/card_4/pf_card4_mobile_x2.webp 2x" media="(min-width: 320px)" type="image/webp"/>
+                                    <source srcset="./images/portfolio/card_4/pf_card4_mobile_x1.jpg 1x, ./images/portfolio/card_4/pf_card4_mobile_x2.jpg 2x" media="(min-width: 320px)"/>
+                                    <img class="portfolio-card" src='./images/portfolio/card_4/pf_card4_mobile_x2.jpg' alt="Наушники"  />
+                                </picture>
+                            </div>
+                            <div class="borders card-info">
+                                <h2 class="projects">Проєкт Prime</h2>
+                                <p class="product">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <!-- Фото коробок -->
+                    <li class="portfolio-card">
+                        <a href="">
+                            <div class="img-wrapper">
+                                <!-- <img src="./images/project5.jpg" alt="Проект Boxes Приложение Коробки" width="370" /> -->
+                                <div class="overlay">
+                                    <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                                        Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                                    </p>
+                                </div>
+                                <picture>
+                                    <source srcset="./images/portfolio/card_5/pf_card5_desktop_x1.webp 1x, ./images/portfolio/card_5/pf_card5_desktop_x2.webp 2x" media="(min-width: 1200px)" type="image/webp"/>
+                                    <source srcset="./images/portfolio/card_5/pf_card5_desktop_x1.jpg 1x, ./images/portfolio/card_5/pf_card5_desktop_x2.jpg 2x" media="(min-width: 1200px)"/>
+                                    <source srcset="./images/portfolio/card_5/pf_card5_tablet_x1.webp 1x, ./images/portfolio/card_5/pf_card5_tablet_x2.webp 2x" media="(min-width: 768px)" type="image/webp"/>
+                                    <source srcset="./images/portfolio/card_5/pf_card5_tablet_x1.jpg 1x, ./images/portfolio/card_5/pf_card5_tablet_x2.jpg 2x" media="(min-width: 768px)"/>
+                                    <source srcset="./images/portfolio/card_5/pf_card5_mobile_x1.webp 1x, ./images/portfolio/card_5/pf_card5_mobile_x2.webp 2x" media="(min-width: 320px)" type="image/webp"/>
+                                    <source srcset="./images/portfolio/card_5/pf_card5_mobile_x1.jpg 1x, ./images/portfolio/card_5/pf_card5_mobile_x2.jpg 2x" media="(min-width: 320px)"/>
+                                    <img class="portfolio-card" src='./images/portfolio/card_5/pf_card5_mobile_x2.jpg' alt="Коробки"  />
+                                </picture>
+                            </div>
+                            <div class="borders card-info">
+                                <h2 class="projects">Проєкт Boxes</h2>
+                                <p class="product">Додаток</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <!-- Фото монитора -->
+                    <li class="portfolio-card">
+                        <a href="">
+                            <div class="img-wrapper">
+                                <!-- <img src="./images/project6.jpg" alt="Inspiration has no Borders Веб-сайт Монитор"
+                                    width="370" /> -->
+                                <div class="overlay">
+                                    <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                                        Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                                    </p>
+                                </div>
+                                <picture>
+                                    <source srcset="./images/portfolio/card_6/pf_card6_desktop_x1.webp 1x, ./images/portfolio/card_6/pf_card6_desktop_x2.webp 2x" media="(min-width: 1200px)" type="image/webp"/>
+                                    <source srcset="./images/portfolio/card_6/pf_card6_desktop_x1.jpg 1x, ./images/portfolio/card_6/pf_card6_desktop_x2.jpg 2x" media="(min-width: 1200px)"/>
+                                    <source srcset="./images/portfolio/card_6/pf_card5_tablet_x1.webp 1x, ./images/portfolio/card_6/pf_card6_tablet_x2.webp 2x" media="(min-width: 768px)" type="image/webp"/>
+                                    <source srcset="./images/portfolio/card_6/pf_card6_tablet_x1.jpg 1x, ./images/portfolio/card_6/pf_card6_tablet_x2.jpg 2x" media="(min-width: 768px)"/>
+                                    <source srcset="./images/portfolio/card_6/pf_card6_mobile_x1.webp 1x, ./images/portfolio/card_6/pf_card6_mobile_x2.webp 2x" media="(min-width: 320px)" type="image/webp"/>
+                                    <source srcset="./images/portfolio/card_6/pf_card6_mobile_x1.jpg 1x, ./images/portfolio/card_6/pf_card6_mobile_x2.jpg 2x" media="(min-width: 320px)"/>
+                                    <img class="portfolio-card" src='./images/portfolio/card_6/pf_card6_mobile_x2.jpg' alt="Чорний монітор"  />
+                                </picture>
+                            </div>
+                            <div class="borders card-info">
+                                <h2 class="projects">Inspiration has no Borders</h2>
+                                <p class="product">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <!-- Фото книги -->
+                    <li class="portfolio-card">
+                        <a href="">
+                            <div class="img-wrapper">
+                                <!-- <img src="./images/project7.jpg" alt="Издание Limited Edition Дизайн Книга"
+                                    width="370" /> -->
+                                <div class="overlay">
+                                    <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                                        Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу. 
+                                    </p>
+                                </div>
+                                <picture>
+                                    <source srcset="./images/portfolio/card_7/pf_card7_desktop_x1.webp 1x, ./images/portfolio/card_7/pf_card7_desktop_x2.webp 2x" media="(min-width: 1200px)" type="image/webp"/>
+                                    <source srcset="./images/portfolio/card_7/pf_card7_desktop_x1.jpg 1x, ./images/portfolio/card_7/pf_card7_desktop_x2.jpg 2x" media="(min-width: 1200px)"/>
+                                    <source srcset="./images/portfolio/card_7/pf_card7_tablet_x1.webp 1x, ./images/portfolio/card_7/pf_card7_tablet_x2.webp 2x" media="(min-width: 768px)" type="image/webp"/>
+                                    <source srcset="./images/portfolio/card_7/pf_card7_tablet_x1.jpg 1x, ./images/portfolio/card_7/pf_card7_tablet_x2.jpg 2x" media="(min-width: 768px)"/>
+                                    <source srcset="./images/portfolio/card_7/pf_card7_mobile_x1.webp 1x, ./images/portfolio/card_7/pf_card7_mobile_x2.webp 2x" media="(min-width: 320px)" type="image/webp"/>
+                                    <source srcset="./images/portfolio/card_7/pf_card7_mobile_x1.jpg 1x, ./images/portfolio/card_7/pf_card7_mobile_x2.jpg 2x" media="(min-width: 320px)"/>
+                                    <img class="portfolio-card" src='./images/portfolio/card_7/pf_card7_mobile_x2.jpg' alt="Книга"  />
+                                </picture>
+                            </div>
+                            <div class="borders card-info">
+                                <h2 class="projects">Видання Limited Edition</h2>
+                                <p class="product">Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <!-- Фото ярлыка -->
+                    <li class="portfolio-card">
+                        <a href="">
+                            <div class="img-wrapper">
+                                <!-- <img src="./images/project8.jpg" alt="Проект LAB Маркетинг Ярлык" width="370" /> -->
+                                <div class="overlay">
+                                    <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                                        Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу. 
+                                    </p>
+                                </div>
+                                <picture>
+                                    <source srcset="./images/portfolio/card_8/pf_card8_desktop_x1.webp 1x, ./images/portfolio/card_8/pf_card8_desktop_x2.webp 2x" media="(min-width: 1200px)" type="image/webp"/>
+                                    <source srcset="./images/portfolio/card_8/pf_card8_desktop_x1.jpg 1x, ./images/portfolio/card_8/pf_card8_desktop_x2.jpg 2x" media="(min-width: 1200px)"/>
+                                    <source srcset="./images/portfolio/card_8/pf_card8_tablet_x1.webp 1x, ./images/portfolio/card_8/pf_card8_tablet_x2.webp 2x" media="(min-width: 768px)" type="image/webp"/>
+                                    <source srcset="./images/portfolio/card_8/pf_card8_tablet_x1.jpg 1x, ./images/portfolio/card_8/pf_card8_tablet_x2.jpg 2x" media="(min-width: 768px)"/>
+                                    <source srcset="./images/portfolio/card_8/pf_card8_mobile_x1.webp 1x, ./images/portfolio/card_8/pf_card8_mobile_x2.webp 2x" media="(min-width: 320px)" type="image/webp"/>
+                                    <source srcset="./images/portfolio/card_8/pf_card8_mobile_x1.jpg 1x, ./images/portfolio/card_8/pf_card8_mobile_x2.jpg 2x" media="(min-width: 320px)"/>
+                                    <img class="portfolio-card" src='./images/portfolio/card_8/pf_card8_mobile_x2.jpg' alt="Ярлык"  />
+                                </picture>
+                            </div>
+                            <div class="borders card-info">
+                                <h2 class="projects">Проєкт LAB</h2>
+                                <p class="product">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <!-- Фото ноутбука -->
+                    <li class="portfolio-card">
+                        <a href="">
+                            <div class="img-wrapper">
+                                <!-- <img src="./images/project9.jpg" alt="Growing Business Приложение Ноутбук"
+                                    width="370" /> -->
+                                <div class="overlay">
+                                    <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                                        Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу. 
+                                    </p>
+                                </div>
+                                <picture>
+                                    <source srcset="./images/portfolio/card_9/pf_card9_desktop_x1.webp 1x, ./images/portfolio/card_9/pf_card9_desktop_x2.webp 2x" media="(min-width: 1200px)" type="image/webp"/>
+                                    <source srcset="./images/portfolio/card_9/pf_card9_desktop_x1.jpg 1x, ./images/portfolio/card_9/pf_card9_desktop_x2.jpg 2x" media="(min-width: 1200px)"/>
+                                    <source srcset="./images/portfolio/card_9/pf_card9_tablet_x1.webp 1x, ./images/portfolio/card_9/pf_card9_tablet_x2.webp 2x" media="(min-width: 768px)" type="image/webp"/>
+                                    <source srcset="./images/portfolio/card_9/pf_card9_tablet_x1.jpg 1x, ./images/portfolio/card_9/pf_card9_tablet_x2.jpg 2x" media="(min-width: 768px)"/>
+                                    <source srcset="./images/portfolio/card_9/pf_card9_mobile_x1.webp 1x, ./images/portfolio/card_9/pf_card9_mobile_x2.webp 2x" media="(min-width: 320px)" type="image/webp"/>
+                                    <source srcset="./images/portfolio/card_9/pf_card9_mobile_x1.jpg 1x, ./images/portfolio/card_9/pf_card9_mobile_x2.jpg 2x" media="(min-width: 320px)"/>
+                                    <img class="portfolio-card" src='./images/portfolio/card_9/pf_card9_mobile_x2.jpg' alt="Ярлык"  />
+                                </picture>
+                            </div>
+                            <div class="borders card-info">
+                                <h2 class="projects">Growing Business</h2>
+                                <p class="product">Додаток</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div class="footer__logo-container">
+                    <a href="#" class="logo"><span class="logo__web">Web</span><span
+                            class="logo__studio--white">Studio</span></a>
+                    <address class="footer__address">
+                        <p class="footer__address__text">м.Київ, пр-т Лесі Українки, 26</p>
+                        <a href="mailto:info@example.com" class="footer__address__link">info@example.com</a>
+                        <a href="tel:+380991111111" class="footer__address__link">+38 099 111 11 11</a>
+                    </address>
+                </div>
+                <div class="ours-socialnetworks">
+                    <p>Приєднуйтесь</p>
+                    <ul class="ours-socialnetworks__container">
+                        <li>
+                            <a class="ours-socialnetworks__element" href="">
+                                <svg class="ours-socialnetworks__icon" width="20" height="20">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="ours-socialnetworks__element" href="">
+                                <svg class="ours-socialnetworks__icon" width="20" height="20">
+                                    <use href="./images/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="ours-socialnetworks__element" href="">
+                                <svg class="ours-socialnetworks__icon" width="20" height="20">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="ours-socialnetworks__element" href="">
+                                <svg class="ours-socialnetworks__icon" width="20" height="20">
+                                    <use href="./images/icons.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <form class="subscribe-form">
+                    <div class="subscribe-form__container">
+                        <label for="email_input" class="subscribe-form__label"> ПІДПИШІТЬСЯ НА РОЗСИЛКУ </label>
+                        <input class="subscribe-form__input" id="email_input" type="email" name="write-mail"
+                            placeholder="E-mail" />
+                    </div>
+                    <button class="subscribe-form__submit" type="submit">Підписатися
+                        <svg class="subscribe-form__submit__icon">
+                            <use href="./icons/optimized_icon/icons2.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/burger.js"></script>
+</body>
+
+</html>

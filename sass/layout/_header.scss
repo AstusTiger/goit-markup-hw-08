@@ -1,0 +1,236 @@
+.header {
+    
+    padding: 16px 15px;
+
+    @media screen and (min-width: 768px) {
+        padding: 0 15px;
+    }
+
+	// @media screen and (max-width: 479px) {
+		
+		
+	// }
+	
+	// @media screen and (min-width: 480px) {
+	// 	margin: auto auto;
+	// 	width: 450px;
+    //     height: 60px;
+		
+	// }
+
+	// @media screen and (min-width: 768px) {
+	// 	padding: 0 ;
+	// 	width: 738px;
+	// 	height: 80px;	
+	// 	display:flex;
+	// 	align-items: center;
+	// }
+
+	// @media screen and (min-width: 1200px) {
+	// 	padding: 0 ;
+	// 	width: 1170px;
+    //     height: 80px;
+	// 	//padding: 0 calc((100% - 1200px) * 0.5 + 15px );
+	// }
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    @media screen and (min-width: 480px) {
+        width: 450px;
+        
+    }
+    @media screen and (min-width: 768px) {
+        width: 738px;
+        
+    }
+    @media screen and (min-width: 1200px) {
+        width: 1170px;
+        
+    }
+    //padding: 10px;
+}
+
+.logo {
+    font-family: 'Raleway';
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    // margin-top: 16px;
+    // margin-bottom: 16px;
+    // margin-left: 5px;
+    width: 134px;
+    height: 28px;
+
+    &__web {
+        color: var(--active-text);
+    }
+
+    &__studio--black {
+        color: var(--ultra-black-text);
+    }
+
+    &__studio--white {
+        color: var(--white-text);
+    }
+}
+
+// .header-list {
+//     display: none;
+// }
+
+// .contacts-menu {
+//     display: none;
+// }
+
+.navigatin-contact-container {
+    position: absolute;
+    background-color: var(--white-text);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    padding: 48px 40px;
+    top: 0;
+    left: 0;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    z-index: 1;
+
+    @media screen and (min-width: 768px) {
+		position:static;
+        background-color: transparent;
+        flex-direction: row;
+        align-items: center;
+        height: 80px;
+        padding: 0;
+
+        opacity: 1;
+        visibility: visible;
+        pointer-events: all;
+		
+    }
+
+    &.isOpen {
+        opacity: 1;
+        visibility:visible;
+        pointer-events:all;
+    }
+
+    &__nav-list {
+        
+
+        @media screen and (min-width: 768px) {
+            margin: 0 auto 0 93px;
+        }
+    }
+
+    &__header-list {
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+        gap: 32px;
+        height: 80px;
+
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+            gap: 50px;
+            
+        }
+    }
+
+    &__contacts-menu {
+        
+        
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 32px;
+        margin-top: auto;
+
+        @media screen and (min-width: 768px) {
+            flex-direction: column;
+            margin: 0;
+            align-items: center;
+            gap: 10px;
+        }
+        @media screen and (min-width: 1200px) {
+            flex-direction: row;
+            gap: 30px;
+        }
+
+    }
+    &__social-links {
+        
+        
+        margin-top: 64px;
+        display: flex;
+        flex-wrap: wrap;
+        color: var(--active-text);
+
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+
+        :not(:last-child) {
+            padding: 0;
+            padding-right: 10px;
+            border-right: 1px solid var(--main-text);
+        }
+        :not(:first-child) {
+            padding-left: 10px;
+        }
+    }
+}
+
+.burger-menu-btn {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    fill: var(--black-text);
+    padding: 0;
+    // margin-top: 10px;
+    // margin-bottom: 10px;
+
+    z-index: 1000;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+
+    &__icon {
+        width: 24px;
+        height: 16px;
+
+        &:hover,
+        &:focus {
+            fill: var(--active-text)
+        }
+
+        &__cross {
+            display: none;
+        }
+
+        .isOpen + .burger-menu-btn &__cross  {
+            display: block;
+        }
+
+        .isOpen + .burger-menu-btn  &__burger {
+            display: none;
+        }
+    }
+    // margin-right: 15px;
+}
+
+.header {
+    border-bottom: 1px solid #ececec;
+
+}
+

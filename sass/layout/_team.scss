@@ -1,0 +1,116 @@
+.team-section {
+    background-color: var(--light-background);
+
+    &__header {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+        text-decoration: none;
+        color: var(--black-text);
+        text-align: center;
+        letter-spacing: 0.03em;
+    }
+}
+
+.container-team {
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: center;
+    justify-content: space-between;
+    // padding-left: 30px;
+    // padding-right: 30px;
+    margin-top: 30px;
+    gap: 30px;
+    width: 100%;
+    @media screen and (min-width:480px) {
+        width: 450px;  
+    }
+    @media screen and (min-width:768px) {
+        width: 738px;    
+    }
+    @media screen and (min-width:1200px) {
+       width: 1170px;  
+    }
+}
+
+.card {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background-color: var(--white-text);
+    max-width: 100%;
+    @media screen and (min-width:480px) {
+        width: 450px;  
+    }
+    @media screen and (min-width:768px) {
+        width: 354px;    
+    }
+    @media screen and (min-width:1200px) {
+       width: 270px;  
+    }
+
+    &__member {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.18;
+        text-decoration: none;
+        color: var(--black-text);
+        text-align: center;
+        letter-spacing: 0.03em;
+        margin-bottom: 10px;
+    }
+
+    &__position {
+        font-size: 16px;
+        line-height: 1.18;
+        text-decoration: none;
+        text-align: center;
+        letter-spacing: 0.03em;
+        margin-bottom: 16px;
+    }
+
+    &__borders {
+        padding: 30px 32px;
+        border-left: 1px solid #ECECEC;
+        border-right: 1px solid #ECECEC;
+        border-bottom: 1px solid #ECECEC;
+    }
+}
+
+.card>picture>img {
+    display: inline-block;
+    width: 100%;
+}
+
+.social-links-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    &__pictures {
+        fill: var(--logo-primery-color);
+        transition: fill var(--animation-time) cubic-bezier(var(--cubic-value));
+    }
+
+    &__element:hover &__pictures,
+    &__element:focus &__pictures {
+        fill: var(--white-text);
+    }
+
+    &__element {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background-color: var(--white-text);
+        transition: background-color var(--animation-time) cubic-bezier(var(--cubic-value));
+    }
+
+    &__element:hover,
+    &__element:focus {
+        background-color: var(--active-text);
+        cursor: pointer;
+    }
+}

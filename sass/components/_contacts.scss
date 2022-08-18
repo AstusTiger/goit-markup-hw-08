@@ -1,0 +1,89 @@
+.contacts {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.17;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    // padding-top: 32px;
+    // padding-bottom: 32px;
+    transition: color var(--animation-time) cubic-bezier(var(--cubic-value));
+    display: flex;
+    color: var(--active-text);
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+        font-size: 12px;
+        color: var(--main-text);
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        color: var(--main-text);
+    }
+
+    &:hover {
+        color: var(--active-text);
+    }
+
+    &:focus {
+        outline: none;
+        color: var(--active-text);
+    }
+
+    &:hover .icon-envelope,
+    &:hover .icon-smartphone {
+        fill: var(--active-text);
+    }
+
+    &:focus .icon-envelope,
+    &:focus .icon-smartphone {
+        fill: var(--active-text);
+    }
+}
+
+.contacts-menu {
+    display: flex;
+
+}
+
+.icon-envelope,
+.icon-smartphone {
+    display: none;
+}
+@media screen and (min-width: 768px) {
+    
+
+.icon-envelope {
+    display: block;
+
+    width: 16px;
+    height: 12px;
+    color: var(--main-text);
+    margin-right: 10px;
+    fill: currentColor;
+    transition: fill var(--animation-time) cubic-bezier(var(--cubic-value));
+}
+
+
+
+.icon-smartphone {
+    display: block;
+
+    width: 10px;
+    height: 16px;
+    color: var(--main-text);
+    margin-right: 10px;
+    fill: currentColor;
+    transition: fill var(--animation-time) cubic-bezier(var(--cubic-value));
+}
+
+}
+
+.contacts-mail {
+    display: flex;
+    color: var(--main-text);
+    align-items: center;
+    font-size: 12px;
+    line-height: 1.66;
+    //margin-right: 50px;
+}

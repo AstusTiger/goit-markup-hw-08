@@ -1,0 +1,67 @@
+.clients {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    text-decoration: none;
+    color: var(--black-text);
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+}
+
+.clients-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    // justify-content: space-between;
+    // text-align: center;
+    gap: 30px;
+    background-color: var(--white-text);
+    // width: 100%;
+    @media screen and (min-width:480px) {
+        width: 450px;  
+    }
+    @media screen and (min-width:768px) {
+        width: 738px;    
+    }
+    @media screen and (min-width:1200px) {
+       width: 1170px;  
+    }
+
+    &__element {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        border: 1px solid var(--logo-primery-color);
+        border-radius: 4px;
+        // width: 210px;
+        height: 92px;
+        transition: border-color var(--animation-time) cubic-bezier(var(--cubic-value));
+        @media screen and (min-width:480px) {
+			width: 210px;
+		}
+		@media screen and (min-width:768px) {
+			width: 226px;
+		}
+		@media screen and (min-width:1200px) {
+			width: 170px;
+		}
+    }
+
+    &__element:hover,
+    &__element:focus {
+        outline: none;
+        border-color: var(--active-text);
+    }
+
+    &__element:hover &__logo,
+    &__element:focus &__logo {
+        fill: var(--active-text);
+    }
+
+    &__logo {
+        fill: var(--logo-primery-color);
+        transition: fill var(--animation-time) cubic-bezier(var(--cubic-value));
+    }
+}

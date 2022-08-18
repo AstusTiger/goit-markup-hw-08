@@ -1,0 +1,22 @@
+.backdrop {
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 0;
+	left: 0;
+	z-index: 1;
+
+	width: 100vw;
+	height: 100vh;
+	padding-left: 15px;
+	padding-right: 15px;
+	background-color: rgba(0, 0, 0, 0.1);
+	transition: opacity var(--animation-time) cubic-bezier(var(--cubic-value)), visibility var(--animation-time) cubic-bezier(var(--cubic-value));
+}
+
+.is-hidden {
+	opacity: 0;
+	pointer-events: none;
+	visibility: hidden;
+}

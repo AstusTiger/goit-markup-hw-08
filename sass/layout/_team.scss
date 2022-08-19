@@ -1,14 +1,23 @@
 .team-section {
     background-color: var(--light-background);
+    // padding-top: 60px;
+    // @media screen and (min-width: 1200px) {
+    //     padding-top: 94px;
+    // }
 
     &__header {
         font-weight: 700;
-        font-size: 36px;
+        font-size: 28px;
         line-height: 1.16;
         text-decoration: none;
         color: var(--black-text);
         text-align: center;
         letter-spacing: 0.03em;
+        margin-bottom: 30px;
+        @media screen and (min-width:1200px) {
+            font-size: 36px;
+            margin-bottom: 50px;
+         }
     }
 }
 

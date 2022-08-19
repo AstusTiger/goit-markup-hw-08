@@ -17,27 +17,15 @@
         padding-bottom: 32px;
     }
 
-    li {
-        margin-bottom: 32px;
-        @media screen and (min-width: 768px) {
-            margin-bottom: 0px;
-        }
-
     &:focus,
     &:hover {
         outline: none;
         color: var(--active-text);
     }
-}
 
     @media screen and (min-width: 768px) {
         &__line {
-        
-        
             position: relative;
-            
-        
-        
     }
 
     &__line::after {

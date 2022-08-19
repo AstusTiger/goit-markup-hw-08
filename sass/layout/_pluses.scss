@@ -24,7 +24,12 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         margin-bottom: 10px;
-        text-align: center;
+        text-align: center;   
+        
+        @media screen and (min-width:768px) {
+            text-align: left;   
+        }
+
 		}
     
 
@@ -59,14 +64,11 @@
         
         width: calc(100%);
         @media screen and (min-width:768px) {	
-        width: calc((100% - 2 * 30px) / 2);
+        width: calc((100% - 30px) / 2);
         }
         @media screen and (min-width:1200px) {
-        width: calc((100% - 4 * 30px) / 4);
+        width: calc((100% - 3 * 30px) / 4);
         }
         }
 }
-// .section-pluses {
-//     padding-bottom: 0;
-// }
 

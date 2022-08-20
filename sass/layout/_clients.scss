@@ -1,6 +1,6 @@
 .clients {
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.17;
     text-decoration: none;
     color: var(--black-text);
@@ -10,6 +10,8 @@
 
     @media screen and (min-width:1200px) {
         margin-bottom: 50px;
+        font-size: 36px;
+      
     }
 }
 

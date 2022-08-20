@@ -75,25 +75,26 @@ li {
 
 .container {
   margin: 0 auto;
+  padding: 0 15px;
 }
 @media screen and (min-width: 480px) {
   .container {
-    width: 450px;
+    width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 738px;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 1200px;
   }
 }
 
 .section {
-  padding: 60px 15px;
+  padding: 60px 0;
 }
 @media screen and (min-width: 1200px) {
   .section {
@@ -367,11 +368,11 @@ li {
 
 /*LAYOUT*/
 .header {
-  padding: 16px 15px;
+  padding: 16px 0;
 }
 @media screen and (min-width: 768px) {
   .header {
-    padding: 0 15px;
+    padding: 0;
   }
 }
 
@@ -388,17 +389,17 @@ li {
 }
 @media screen and (min-width: 480px) {
   .header-container {
-    width: 450px;
+    width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .header-container {
-    width: 738px;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .header-container {
-    width: 1170px;
+    width: 1200px;
   }
 }
 
@@ -599,28 +600,33 @@ li {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: url("../images/hero/hero_tablet_x1.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/hero_tablet_x1.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero_tablet_x1.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: url("../images/hero/hero_desktop_x1.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/hero_desktop_x1.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero_desktop_x1.jpg");
     height: 600px;
   }
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../images/hero/hero_mobile_x2.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/hero_mobile_x2.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero_mobile_x2.jpg");
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .hero {
-    background-image: url("../images/hero/hero_tablet_x2.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/hero_tablet_x2.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero_tablet_x2.jpg");
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero {
-    background-image: url("../images/hero/hero_desktop_x2.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/hero_desktop_x2.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero_desktop_x2.jpg");
     height: 600px;
   }
 }
@@ -1155,7 +1161,7 @@ textarea:hover {
 
 .clients {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-decoration: none;
   color: var(--black-text);
@@ -1166,6 +1172,7 @@ textarea:hover {
 @media screen and (min-width: 1200px) {
   .clients {
     margin-bottom: 50px;
+    font-size: 36px;
   }
 }
 
@@ -1449,7 +1456,7 @@ textarea:hover {
 
 footer {
   background-color: var(--dark-background);
-  padding: 60px 15px;
+  padding: 60px 0;
 }
 
 .footer-flex-wrapper {
